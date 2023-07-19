@@ -14,10 +14,9 @@ with st.sidebar:
         [
             "Distribution",
             "Correlation Matrix",
-            "Model",
             "Regression",
         ],
-        icons=["bar-chart", "link-45deg", "box", "code-square"],
+        icons=["bar-chart", "link-45deg", "code-square"],
         menu_icon="cast",
         default_index=0,
     )
@@ -26,7 +25,5 @@ if selected == "Distribution":
     eda.distribution()
 elif selected == "Correlation Matrix":
     eda.corr_matrix()
-elif selected == "Model":
-    prediction.model()
 elif selected == "Regression":
     prediction.predict()

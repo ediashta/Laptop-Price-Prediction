@@ -49,6 +49,16 @@ def corr_matrix():
     )
     sns.heatmap(corr_matrix, annot=True, cmap="mako", square=True)
     col1.pyplot(fig)
+    col2.write(
+        "Heatmap disebelah merupakan korelasi antara data numerikal dengan Final Price sebuah laptop, data dibawah merupakan korelasi data kategorical dengan Final Price sebuah laptop"
+    )
+    col2.markdown("### Correlation")
+    col2.markdown("* **Status** : 0.26450718170008297")
+    col2.markdown("* **Brand** : 0.241996453068071")
+    col2.markdown("* **Model** : 0.2519900783873629")
+    col2.markdown("* **CPU** : 0.2517567086906365")
+    col2.markdown("* **GPU** : 0.3422702941182396")
+    col2.markdown("* **Touch** : 0.095355125133349")
 
 
 def count_plot(var):
