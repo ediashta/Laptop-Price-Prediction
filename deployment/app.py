@@ -4,9 +4,6 @@ import prediction
 from streamlit_option_menu import option_menu
 
 
-with open("./style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 st.sidebar.header("Laptop Price Database")
 
 
@@ -22,7 +19,7 @@ with st.sidebar:
         ],
         icons=["bar-chart", "link-45deg", "box", "code-square"],
         menu_icon="cast",
-        default_index=1,
+        default_index=0,
     )
 
 if selected == "Distribution":

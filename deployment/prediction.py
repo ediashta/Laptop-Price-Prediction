@@ -6,22 +6,22 @@ import json
 
 
 # load file
-# with open("./list_nom_cols.txt", "r") as file_1:
-#     model_nom_cols = json.load(file_1)
+with open("./list_cat_cols.txt", "r") as file_1:
+    list_cat_cols = json.load(file_1)
 
-# with open("./list_num_cols.txt", "r") as file_2:
-#     model_num_cols = json.load(file_2)
+with open("./list_label_cols.txt", "r") as file_2:
+    list_label_cols = json.load(file_2)
 
-# with open("./list_num_cols.txt", "r") as file_3:
-#     model_ord_cols = json.load(file_3)
+with open("./list_num_cols.txt", "r") as file_3:
+    list_num_cols = json.load(file_3)
 
-# with open("./model_pipeline.pkl", "rb") as file_4:
-#     model_pipeline = pickle.load(file_4)
+with open("./model_grid_xgb.pkl", "rb") as file_4:
+    model_grid_xgb = pickle.load(file_4)
 
 
 def predict():
     # form
-    with st.form("key=form_fifa-2022"):
+    with st.form("key=laptop_predict"):
         st.write("Bio")
         col1, col2, col3 = st.columns(3)
         name = col1.text_input("Full Name", value="")
